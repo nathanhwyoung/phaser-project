@@ -33,5 +33,11 @@ SpaceHipster.MainMenu.prototype = {
         if (this.game.input.activePointer.justPressed()) {
             this.game.state.start('Game');
         }
-    }
+    },
+    init: function(score) {
+        var score = score || 0;
+        this.highestScore = this.highestScore || 0;
+
+        this.highestScore = Math.max(score, this.highestScore);
+    },
 };

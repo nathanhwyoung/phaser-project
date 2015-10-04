@@ -5,7 +5,7 @@ SpaceHipster.Preload = function() {};
 
 SpaceHipster.Preload.prototype = {
     preload: function() {
-        //show logo in loading screen
+        //show loading screen
         this.splash = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'logo');
         this.splash.anchor.setTo(0.5);
 
